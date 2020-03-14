@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac7b3716-eb32-4698-92c1-dccc8955e44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_hazelcast_hazelcast_3_12_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_2_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mariadb/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mariadb/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mariadb/data/backup/inv_dump.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mariadb/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mariadb/scripts/01_users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mariadb/scripts/02_inv_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mariadb/scripts/03_dataload.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/GenerateInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/IDSFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/InventoryDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/InventoryKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/InventoryTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/training-instrutor-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/training-instructor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/InventoryKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hazelcast/inv/InventoryKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training-instrutor-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/training-instrutor-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +72,22 @@
       <option name="presentableId" value="Default" />
       <updated>1583765592424</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial build of docker db image with sample data working">
+      <created>1583846867547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583846867547</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="Makefile" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial build of docker db image with sample data working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial build of docker db image with sample data working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="460" y="186" width="813" height="666" key="#Project_Structure" timestamp="1583846643959">
@@ -109,26 +98,30 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="989" y="224" key="#com.intellij.ide.util.MemberChooser/0.23.1680.969@0.23.1680.969" timestamp="1583845918545" />
-    <state x="531" y="111" key="CommitChangelistDialog2" timestamp="1583846710867">
+    <state x="625" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583846895085">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state x="531" y="111" key="CommitChangelistDialog2/0.23.1680.969@0.23.1680.969" timestamp="1583846710867" />
-    <state width="1444" height="247" key="GridCell.Tab.0.bottom" timestamp="1583846710893">
+    <state x="625" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.969@0.23.1680.969" timestamp="1583846895085" />
+    <state x="531" y="111" key="CommitChangelistDialog2" timestamp="1583846866874">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1444" height="247" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1583846710893" />
-    <state width="1444" height="247" key="GridCell.Tab.0.center" timestamp="1583846710892">
+    <state x="531" y="111" key="CommitChangelistDialog2/0.23.1680.969@0.23.1680.969" timestamp="1583846866874" />
+    <state width="1444" height="247" key="GridCell.Tab.0.bottom" timestamp="1583952436450">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1444" height="247" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1583846710892" />
-    <state width="1444" height="247" key="GridCell.Tab.0.left" timestamp="1583846710892">
+    <state width="1444" height="247" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1583952436450" />
+    <state width="1444" height="247" key="GridCell.Tab.0.center" timestamp="1583952436449">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1444" height="247" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1583846710892" />
-    <state width="1444" height="247" key="GridCell.Tab.0.right" timestamp="1583846710893">
+    <state width="1444" height="247" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1583952436449" />
+    <state width="1444" height="247" key="GridCell.Tab.0.left" timestamp="1583952436449">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1444" height="247" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1583846710893" />
+    <state width="1444" height="247" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1583952436449" />
+    <state width="1444" height="247" key="GridCell.Tab.0.right" timestamp="1583952436450">
+      <screen x="0" y="23" width="1680" height="969" />
+    </state>
+    <state width="1444" height="247" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1583952436450" />
     <state x="354" y="157" key="Maven.ArtifactSearchDialog" timestamp="1583768944535">
       <screen x="0" y="23" width="1680" height="969" />
     </state>

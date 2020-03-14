@@ -5,9 +5,10 @@ import com.hazelcast.nio.ObjectDataOutput;
 import com.hazelcast.nio.serialization.IdentifiedDataSerializable;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Random;
 
-public class Inventory implements IdentifiedDataSerializable {
+public class Inventory implements Serializable, IdentifiedDataSerializable {
 
     private String sku;
     private String description;

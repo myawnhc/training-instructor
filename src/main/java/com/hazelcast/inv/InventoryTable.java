@@ -18,30 +18,12 @@ public class InventoryTable
     private static final DecimalFormat skuFormat = new DecimalFormat("000000"); // 6 digit
     private static final DecimalFormat locationFormat  = new DecimalFormat( "0000");    // 4 digit
 
-//    protected String accountNumber;
-//    private Double creditLimit;
-//    private Double balance;
-//    private Account.AccountStatus status;
-//    //private Location lastReportedLocation;
-//    private String lastReportedLocation;
-
-
     // Index positions
     private static final int SKU = 1;
     private static final int DESCRIPTION = 2;
     private static final int LOCATION = 3;
     private static final int LOCATION_TYPE = 4;
     private static final int QUANTITY = 5;
-
-//    private static final String createTableString =
-//            "create table account ( " +
-//                    "acct_number    char(10)     not null, " +
-//                    "credit_limit   float, " +
-//                    "balance        float, " +
-//                    "acct_status    smallint, " +
-//                    "location       varchar(10), " +         // geohash
-//                    "primary key (acct_number) " +
-//                    ")";
 
 //    create table inventory (
 //            sku           char(10)     not null,
@@ -67,11 +49,10 @@ public class InventoryTable
     private PreparedStatement selectStatement;
 
     public synchronized void establishConnection()  {
-        //log.info("AbstractTable.establishConnection()");
         try {
             // Register the driver, we don't need to actually assign the class to anything
             Class.forName("org.mariadb.jdbc.Driver");
-            String jdbcURL = "jdbc:mysql://127.0.0.1:3306/inventoryDB";
+            String jdbcURL = "jdbc:mysql://localhost:3306/inventoryDB";
             //log.info("Attempting connection to " + jdbcURL + " for user " + BankInABoxProperties.JDBC_USER);
             conn = DriverManager.getConnection(
                     jdbcURL, "hzuser", "hzpass");
@@ -81,18 +62,6 @@ public class InventoryTable
             System.exit(-1);
         }
     }
-
-//    private Inventory generate(int id) {
-//        try {
-//            Inventory inv = new Account(accountFormat.format(id));
-//            return inv;
-//        } catch (Throwable t) {
-//            t.printStackTrace();
-//            System.exit(-1);
-//
-//            return null;
-//        }
-//    }
 
     public void generateSampleData() {
         // Hard-coding some varlues here:
@@ -152,7 +121,7 @@ public class InventoryTable
 
     public synchronized Inventory readFromDatabase(String skuKey, String location) {
         if (skuKey == null || location == null) {
-            log.warning("InventoryTable.readFromDatabase(): Passed null id, returning null");
+            log.warning("InventoryTable.readFromDatabase(): Passed null key, returning null");
             return null;
         }
         try {
@@ -172,7 +141,7 @@ public class InventoryTable
                 item.setSKU(rs.getString(SKU));
                 item.setDescription(rs.getString(DESCRIPTION));
                 item.setLocation(rs.getString(LOCATION));
-                item.setLocationType(rs.getString(LOCATION_TYPE).charAt(0));
+                item.setLocation(rs.getString(LOCATION_TYPE));
                 item.setQuantity(rs.getInt(QUANTITY));
             }
             return item;
